@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4700.0" prefWidth="1084.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutX="6.0" layoutY="7.0" prefHeight="224.0" prefWidth="1062.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Button fx:id="profileButton" layoutX="954.0" layoutY="118.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="81.0" prefWidth="79.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="cartButton" layoutX="912.0" layoutY="122.0" mnemonicParsing="false" onAction="#gotoCart" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/cart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="heartButton" layoutX="856.0" layoutY="121.0" mnemonicParsing="false" style="-fx-background-color: ransparent;" />
+                  <Button fx:id="wednesdaysButton" layoutX="164.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="WEDNESDAYS." textFill="#d37171">
+                     <font>
+                        <Font name="Times New Roman" size="90.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="12.0" layoutY="231.0" prefHeight="1174.0" prefWidth="1058.0" style="-fx-background-color: transparent;">
+               <children>
+                  <ImageView fitHeight="370.0" fitWidth="1010.0" layoutX="20.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/GroupPic2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg3" fitHeight="327.0" fitWidth="326.0" layoutX="704.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/b.CardiganHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg2" fitHeight="327.0" fitWidth="326.0" layoutX="362.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/n.ShirtHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg1" fitHeight="327.0" fitWidth="326.0" layoutX="14.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/l.JacketHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg4" fitHeight="327.0" fitWidth="326.0" layoutX="14.0" layoutY="784.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/j.SunniesHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg5" fitHeight="327.0" fitWidth="326.0" layoutX="362.0" layoutY="784.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/l.VestHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg6" fitHeight="327.0" fitWidth="326.0" layoutX="709.0" layoutY="784.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/n.TopHome.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="l3" layoutX="709.0" layoutY="734.0" text="Cardigan">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l2" layoutX="362.0" layoutY="734.0" text="Korean Tee">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l1" layoutX="14.0" layoutY="734.0" text="Leather Jacket">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="1122.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l5" layoutX="362.0" layoutY="1122.0" text="Vest">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l6" layoutX="709.0" layoutY="1122.0" text="Polo Shirt">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l4" layoutX="14.0" layoutY="1122.0" text="Sunnies">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="53.0" layoutX="966.0" layoutY="879.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="253.0" layoutY="724.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="287.0" layoutY="724.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="607.0" layoutY="724.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="641.0" layoutY="724.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="985.0" layoutY="722.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="951.0" layoutY="722.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="260.0" layoutY="1110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="294.0" layoutY="1110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="613.0" layoutY="1110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="985.0" layoutY="1110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="951.0" layoutY="1110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Label layoutX="13.0" layoutY="765.0" text="1800.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="363.0" layoutY="766.0" text="1000.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="710.0" layoutY="765.0" text="1390.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="1153.0" text="490.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="367.0" layoutY="1153.0" text="698.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="708.0" layoutY="1153.0" text="1499.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="1414.0" prefHeight="793.0" prefWidth="1035.0">
+               <children>
+                  <ImageView fitHeight="388.0" fitWidth="1010.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/biacover.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="402.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Bianca's picks" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="hpimg7" fitHeight="327.0" fitWidth="326.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/b.shorts2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg8" fitHeight="327.0" fitWidth="326.0" layoutX="356.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/b.TopHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg9" fitHeight="327.0" fitWidth="326.0" layoutX="695.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/b.SunniesHome.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="l7" layoutX="14.0" layoutY="744.0" text="Black Skort">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l8" layoutX="356.0" layoutY="744.0" text="Sleveless Top">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l9" layoutX="695.0" layoutY="744.0" text="Sunglasses">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="282.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="248.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="601.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="635.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="940.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Label layoutX="12.0" layoutY="772.0" text="670.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="356.0" layoutY="772.0" text="489.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="695.0" layoutY="772.0" text="470.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="2207.0" prefHeight="806.0" prefWidth="1035.0">
+               <children>
+                  <ImageView fitHeight="388.0" fitWidth="1010.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/nebscover.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="402.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Nivek's picks" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="hpimg10" fitHeight="327.0" fitWidth="325.0" layoutX="14.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/n.top3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg11" fitHeight="330.0" fitWidth="334.0" layoutX="348.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/n.PantsHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg12" fitHeight="327.0" fitWidth="326.0" layoutX="695.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/n.SunniesHome.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="l10" layoutX="14.0" layoutY="744.0" text="Polo Shirt">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l11" layoutX="356.0" layoutY="744.0" text="Trousers">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l12" layoutX="695.0" layoutY="744.0" text="Shades">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="253.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="287.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="596.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="940.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="974.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Label layoutX="14.0" layoutY="771.0" text="1499.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="356.0" layoutY="771.0" text="1890.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="695.0" layoutY="771.0" text="450.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="2998.0" prefHeight="806.0" prefWidth="1035.0">
+               <children>
+                  <ImageView fitHeight="388.0" fitWidth="1010.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/liyahcover.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="402.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Aalliyah's picks" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="hpimg13" fitHeight="327.0" fitWidth="326.0" layoutX="14.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/l.shortsHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg14" fitHeight="327.0" fitWidth="326.0" layoutX="356.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/l.baggypants3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg15" fitHeight="327.0" fitWidth="326.0" layoutX="695.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/l.vest1.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="l13" layoutX="14.0" layoutY="744.0" text="Pink Short">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l14" layoutX="356.0" layoutY="744.0" text="Baggy Pants">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l15" layoutX="695.0" layoutY="744.0" text="Vest">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="260.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="294.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="604.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="638.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="944.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="978.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Label layoutX="356.0" layoutY="774.0" text="1798.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="774.0" text="870.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="695.0" layoutY="771.0" text="698.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="3794.0" prefHeight="830.0" prefWidth="1035.0">
+               <children>
+                  <ImageView fitHeight="388.0" fitWidth="1010.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/kiecover.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="402.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Jeanne's picks" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="hpimg16" fitHeight="327.0" fitWidth="326.0" layoutX="14.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/j.BodysuitHome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg17" fitHeight="327.0" fitWidth="326.0" layoutX="356.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/j.PoloDress4..png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hpimg18" fitHeight="327.0" fitWidth="326.0" layoutX="695.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/j.WhiteSkortHome.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="l16" layoutX="14.0" layoutY="744.0" text="Bodysuit">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l17" layoutX="356.0" layoutY="744.0" text="Sling Bag">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l18" layoutX="695.0" layoutY="744.0" text="White Skort">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="261.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="295.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="604.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="944.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Button layoutX="978.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <Label layoutX="14.0" layoutY="771.0" text="849.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="356.0" layoutY="771.0" text="1300.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="695.0" layoutY="771.0" text="670.00">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <MenuBar fx:id="homemenubar" layoutX="30.0" layoutY="182.0" prefHeight="55.0" prefWidth="351.0" style="-fx-background-color: transparent;" stylesheets="@../style.css">
+               <menus>
+                  <Menu fx:id="menuowners" mnemonicParsing="false" text="Owner's picks">
+                     <items>
+                        <MenuItem fx:id="Jeanne" mnemonicParsing="false" onAction="#gotoJeannes" styleClass="menuitem" text="Jeanne" />
+                        <MenuItem fx:id="Bianca" mnemonicParsing="false" onAction="#gotoBias" styleClass="menuitem" text="Bianca" />
+                        <MenuItem fx:id="Liyah" mnemonicParsing="false" onAction="#gotoLiyahs" styleClass="menuitem" text="Liyah" />
+                        <MenuItem fx:id="Nivek" mnemonicParsing="false" onAction="#gotoNiveks" styleClass="menuitem" text="Nivek" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="categories" mnemonicParsing="false" text="Categories">
+                     <items>
+                        <MenuItem fx:id="menmenuitem" mnemonicParsing="false" onAction="#gotoMens" styleClass="menuitem" text="Men" />
+                        <MenuItem fx:id="womenmenuitem" mnemonicParsing="false" onAction="#gotoWomens" styleClass="menuitem" text="Women" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

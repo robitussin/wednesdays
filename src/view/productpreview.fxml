@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1085.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="homemenubar" layoutX="31.0" layoutY="136.0" prefHeight="43.0" prefWidth="225.0" style="-fx-background-color: transparent;">
+        <menus>
+          <Menu fx:id="Bianca" mnemonicParsing="false" text="Owner's picks">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Men">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Women">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="productImage" fitHeight="385.0" fitWidth="385.0" layoutX="40.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WedFinal/src/images/eyelettop4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="568.0" layoutY="312.0" text="Cotton Linen: Shirt">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="480.0" text="size:">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="511.0" layoutY="535.0" mnemonicParsing="false" text="XS" fx:id="xsbutton">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="sbutton" layoutX="590.0" layoutY="535.0" mnemonicParsing="false" text="S">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="mbutton" layoutX="659.0" layoutY="535.0" mnemonicParsing="false" text="M">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="lbutton" layoutX="725.0" layoutY="535.0" mnemonicParsing="false" text="L">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="792.0" layoutY="535.0" mnemonicParsing="false" text="XL" fx:id="xlbutton">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="873.0" layoutY="535.0" mnemonicParsing="false" text="XXL" fx:id="xxlbutton">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="643.0" layoutY="356.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="PHP 2,000.00" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="descriptionLabel" layoutX="511.0" layoutY="419.0" text="Relaxed-fit shirt made of a linen blend. Button-down collar.">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="126.0" layoutX="614.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WedFinal/src/images/ratings.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="514.0" layoutY="593.0" text="ratings:">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="287.0" layoutY="34.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT;" text="WEDNESDAYS." textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="65.0" />
+         </font>
+      </Button>
+      <Button layoutX="907.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+      <Button layoutX="953.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+      <Button layoutX="994.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+      <Button layoutX="392.0" layoutY="369.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="nextbutton" fitHeight="150.0" fitWidth="65.0" onDragDetected="#handleNext" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="-1.0" layoutY="372.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="previousbutton" fitHeight="150.0" fitWidth="65.0" onDragDetected="#handlePrev" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="65.0" layoutX="958.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WedFinal/src/images/cart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="77.0" layoutX="994.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WedFinal/src/images/profile.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

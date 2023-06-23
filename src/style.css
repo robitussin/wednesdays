@@ -1,0 +1,62 @@
+
+/* :root {
+  --clr-dark: #070a12;
+  --clr-light: #f9f9fb;
+  --clr-accent: #f43f70;
+  --clr-rgba: rgba(244, 63, 112, 0.2);
+} */
+
+#shopbutton
+ {
+    -fx-background-color: transparent;
+ }
+#shopbutton:hover 
+{
+  -fx-background-color: rgba(171, 182, 185, 0.932);
+} 
+/* #shopbutton:pressed
+{
+  -fx-background-color: brown;
+} */
+
+/* MENU BAR IN HOME PAGE*/
+#homemenubar
+{
+    -fx-font-family: "Times New Roman";
+ }
+
+#menuowners:hover{
+  -fx-background-color: "#d37171";
+}
+#menumen:hover{
+  -fx-background-color: "#d37171";
+}
+#menuwomen:hover{
+  -fx-background-color: "#d37171";
+}
+
+.menuitem:hover{
+  -fx-background-color: "#d37171";
+}
+
+#homemenubar {
+  -fx-font-size: 20px;
+}
+
+#backtohome_prof{
+  transition: all 0.3s;
+}
+
+#wishbutton{
+  transition: all 0.3s ;
+}
+
+#wishbutton:hover{
+  transform: translateY(-10px);
+  -fx-background-color: "#d37171";
+}
+
+.menubar:hover{
+  -fx-background-color: "#d37171";
+}
+

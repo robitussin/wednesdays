@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1085.0" style="-fx-background-color: LIGHT GREY;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label fx:id="asd" layoutX="129.0" layoutY="342.0" prefHeight="27.0" prefWidth="344.0" text="username and password does not match!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="810.0" fitWidth="1127.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loginphoto.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="mytextfield" layoutX="351.0" layoutY="363.0" prefHeight="29.0" prefWidth="384.0" promptText="Enter your email here..." />
+      <PasswordField fx:id="mypasswordfield" layoutX="354.0" layoutY="460.0" prefHeight="29.0" prefWidth="384.0" promptText="Enter your password here..." />
+      <Label layoutX="319.0" layoutY="177.0" text="WEDNESDAYS." textFill="#d37171">
+         <font>
+            <Font name="Times New Roman" size="65.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="256.0" text="LOGIN">
+         <font>
+            <Font name="Times New Roman" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="325.0" text="Email" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="421.0" text="Password" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginbutton" layoutX="571.0" layoutY="529.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #d37171;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="signupbutton" layoutX="396.0" layoutY="528.0" mnemonicParsing="false" onAction="#signup" style="-fx-background-color: transparent; -fx-border-width: 2; -fx-border-color: #d37171;" text="Sign Up" textFill="#d37171">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="mywarninglabel" layoutX="489.0" layoutY="605.0" text="Username and Password did not match!" visible="false" />
+      <Button fx:id="wednesdaysbutton" layoutX="319.0" layoutY="189.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="465.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

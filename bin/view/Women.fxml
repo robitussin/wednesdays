@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WomenController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="912.0" prefWidth="1082.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="465.0" layoutY="99.0" text="Women">
+               <font>
+                  <Font name="Times New Roman" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="wimg1" fitHeight="344.0" fitWidth="273.0" layoutX="63.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/linenshort1.png" />
+               </image></ImageView>
+            <ImageView fx:id="wimg2" fitHeight="344.0" fitWidth="273.0" layoutX="405.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/skort1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wimg3" fitHeight="344.0" fitWidth="273.0" layoutX="763.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/bomberjacket2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wimg4" fitHeight="344.0" fitWidth="273.0" layoutX="57.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/blazer2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wimg5" fitHeight="344.0" fitWidth="273.0" layoutX="409.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/whitepants1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wimg6" fitHeight="344.0" fitWidth="273.0" layoutX="765.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../WedFinal/src/images/dress3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="wname1" layoutX="70.0" layoutY="503.0" text="Linen Short">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="wname2" layoutX="406.0" layoutY="504.0" text="Asymmetric Skort">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="wname3" layoutX="768.0" layoutY="503.0" text="Bomber Jacket">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="wname4" layoutX="56.0" layoutY="840.0" text="Cropped Blazer">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="wname5" layoutX="407.0" layoutY="840.0" text="Palazzo Trousers">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="wname6" layoutX="764.0" layoutY="840.0" text="Printed Dress">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="wednesdaysbutton" layoutX="320.0" layoutY="23.0" mnemonicParsing="false" onAction="#gotoHome" style="-fx-background-color: TRANSPARENT;" text="WEDNESDAYS." textFill="#d37171">
+               <font>
+                  <Font name="Times New Roman Bold" size="60.0" />
+               </font>
+            </Button>
+            <Button fx:id="profileButton" layoutX="992.0" layoutY="123.0" mnemonicParsing="false" onAction="#gotoProfile" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="wcartbutton" layoutX="951.0" layoutY="126.0" mnemonicParsing="false" onAction="#gotoCart" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="wcartbutton1" layoutX="279.0" layoutY="482.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="wcartbutton2" layoutX="624.0" layoutY="482.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="wcartbutton3" layoutX="979.0" layoutY="481.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="wcartbutton4" layoutX="266.0" layoutY="818.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="wcartbutton5" layoutX="624.0" layoutY="818.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="wcartbutton6" layoutX="979.0" layoutY="825.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: TRANSPARENT;">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../WedFinal/src/images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label fx:id="wprice1" layoutX="70.0" layoutY="534.0" text="674.00">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="wprice2" layoutX="406.0" layoutY="534.0" text="690.00">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="wprice3" layoutX="768.0" layoutY="534.0" text="1500.00">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="wprice4" layoutX="56.0" layoutY="869.0" text="1690.00">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="wprice5" layoutX="409.0" layoutY="869.0" text="1100.00">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="wprice6" layoutX="768.0" layoutY="869.0" text="1399.00">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <MenuBar fx:id="homemenubar" layoutX="11.0" layoutY="162.0" prefHeight="55.0" prefWidth="351.0" style="-fx-background-color: transparent;" stylesheets="@../style.css">
+               <menus>
+                  <Menu fx:id="menuowners" mnemonicParsing="false" text="Owner's picks">
+                     <items>
+                        <MenuItem fx:id="Jeanne" mnemonicParsing="false" onAction="#gotoJeannes" styleClass="menuitem" text="Jeanne" />
+                        <MenuItem fx:id="Bianca" mnemonicParsing="false" onAction="#gotoBias" styleClass="menuitem" text="Bianca" />
+                        <MenuItem fx:id="Liyah" mnemonicParsing="false" onAction="#gotoLiyahs" styleClass="menuitem" text="Liyah" />
+                        <MenuItem fx:id="Nivek" mnemonicParsing="false" onAction="#gotoNiveks" styleClass="menuitem" text="Nivek" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="categories" mnemonicParsing="false" text="Categories">
+                     <items>
+                        <MenuItem fx:id="menmenuitem" mnemonicParsing="false" onAction="#gotoMens" styleClass="menuitem" text="Men" />
+                        <MenuItem fx:id="womenmenuitem" mnemonicParsing="false" onAction="#gotoWomens" styleClass="menuitem" text="Women" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

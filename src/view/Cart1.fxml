@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7810.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckoutController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="7792.0" prefWidth="1085.0">
+         <children>
+            <Label layoutX="498.0" layoutY="98.0" text="Cart">
+               <font>
+                  <Font name="Times New Roman" size="50.0" />
+               </font>
+            </Label>
+            <Pane fx:id="totalpane" layoutX="804.0" layoutY="176.0" prefHeight="605.0" prefWidth="263.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="checkoutbutton" layoutX="80.0" layoutY="554.0" mnemonicParsing="false" style="-fx-background-color: #d37171;" text="Checkout" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="167.0" text="Total:" textFill="#d37171">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="total" layoutX="91.0" layoutY="14.0" prefHeight="34.0" prefWidth="148.0" text="Total">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <VBox fx:id="myvbox" layoutX="32.0" layoutY="177.0" prefHeight="7590.0" prefWidth="754.0" style="-fx-background-color: gray;">
+               <children>
+                  <Pane fx:id="mpane1" layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="mimg1" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/longsleeves1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mname1" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="167.0" text="Linen Long Sleeves" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mprice1" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,000.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize1" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="mchoicebox1" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mpane2" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="mimg2" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tanktop4.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mname2" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="161.0" text="Crochet Tank Top" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mprice2" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="550.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize2" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="mchoicebox2" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mpane3" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="mimg3" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/coverup2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mname3" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="161.0" text="Knitted Cover Up" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mprice3" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="990.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize3" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="mchoicebox3" layoutX="231.0" layoutY="192.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mpane4" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="mimg4" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/whitemaong4.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mname4" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="163.0" text="Denim Shorts" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mprice4" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,400.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize4" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="mchoicebox4" layoutX="233.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mpane5" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="mimg5" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/sweatshorts2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mname5" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="179.0" text="Pink Sweatshorts" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mprice5" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,600.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize5" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="mchoicebox5" layoutX="235.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mpane6" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="mimg6" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/eyelettop4.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mname6" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Cutwork Shirt" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mprice6" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,350.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize6" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="mchoicebox6" layoutX="234.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wpane1" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="wimg1" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/linenshort1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wname1" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Linen Short" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wprice1" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wsize1" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="wchoicebox1" layoutX="235.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wpane2" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="wimg2" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/skort1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wname2" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="182.0" text="Assymetric Short" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wprice2" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="2,000.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wsize2" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="wchoicebox2" layoutX="229.0" layoutY="191.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wpane3" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="wimg3" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/bomberjacket2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wname3" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Bomber Jacket" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wprice3" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="999.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="msize3" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="wchoicebox3" layoutX="228.0" layoutY="191.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wpane4" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="wimg4" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/blazer2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wname4" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Cropped Blazer" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wprice4" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wsize4" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="wchoicebox4" layoutX="234.0" layoutY="190.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wpane5" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="wimg5" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/whitepants1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wname5" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Palazzo Trousers" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wprice5" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="750.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wsize5" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="wchoicebox5" layoutX="238.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wpane6" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="wimg6" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dress3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="wname6" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Printed Dress" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wprice6" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,100.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wsize6" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="wchoicebox6" layoutX="237.0" layoutY="190.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bpane1" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="bimg1" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/b.BlackShortsHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="bname1" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Black Skort" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bprice1" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="500.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bsize1" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="bchoicebox1" layoutX="239.0" layoutY="192.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bpane2" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="bimg2" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/b.cardigan1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="bname2" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Cardigan" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bprice2" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="700.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bsize2" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="bchoicebox2" layoutX="238.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bpane3" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="bimg3" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/b.whiteshorts1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="bname3" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="White Shorts" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bprice3" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bsize3" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="bchoicebox3" layoutX="239.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bpane4" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="bimg4" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/b.top4.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="bname4" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Sleveless Top" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bprice4" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,000.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bsize4" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="bchoicebox4" layoutX="238.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bpane5" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="bimg5" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/b.sunnies3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="bname5" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Sunglasses" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bprice5" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bsize5" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="bchoicebox5" layoutX="235.0" layoutY="192.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="jpane1" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="jimg1" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/j.PoloDressHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jname1" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Polo Dress" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jprice1" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jsize1" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="jchoicebox1" layoutX="229.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="jpane2" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="jimg2" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/j.bodysuit1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jname2" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Body Suit" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jprice2" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,499.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jsize2" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="jchoicebox2" layoutX="233.0" layoutY="189.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="jpane3" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="jimg3" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/j.SunniesHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jname3" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Sunnies" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jprice3" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jsize3" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="jchoicebox3" layoutX="236.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="jpane4" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="jimg4" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/j.bag1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jname4" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="175.0" text="Sling Bag" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jprice4" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,200.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jsize4" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="jchoicebox4" layoutX="233.0" layoutY="191.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="jpane5" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="jimg5" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/j.CoverUp3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jname5" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Skort" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jprice5" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="499.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jsize5" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="jchoicebox5" layoutX="231.0" layoutY="192.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="jpane6" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="jimg6" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/j.CoverUpHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jname6" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Sling Bag" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jprice6" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,700.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jsize6" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="jchoicebox6" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="lpane1" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="limg1" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/l.BaggyPantsHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lname1" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Baggy Pants" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lprice1" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,500.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lsize1" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="lchoicebox1" layoutX="231.0" layoutY="194.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="lpane2" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="limg2" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/l.shortsHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lname2" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Pink Shorts" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lprice2" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,700.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lsize2" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="lchoicebox2" layoutX="228.0" layoutY="190.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="lpane3" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="limg3" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/l.jacket4.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lname3" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Leather Jacket" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lprice3" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,000.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lsize3" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="lchoicebox3" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="lpane4" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="limg4" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/l.SunniesHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lname4" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Glasses" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lprice4" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="500.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lsize4" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="lchoicebox4" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="lpane5" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="limg5" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/l.vest1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lname5" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Vest" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lprice5" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="750.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lsize5" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="lchoicebox5" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="npane1" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="nimg1" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/n.ShirtHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nname1" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Korean Tee" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nprice1" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,800.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nsize1" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="nchoicebox1" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="npane2" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="nimg2" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/n.SunniesHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nname2" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Shades" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nprice2" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="500.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nsize2" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="nchoicebox2" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="npane3" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="nimg3" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/n.pants1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nname3" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="163.0" text="Trousers" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nprice3" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="900.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nsize3" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="nchoicebox3" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="npane4" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="nimg4" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/n.TopHome.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nname4" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="148.0" text="Polo Shirt" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nprice4" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,200.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nsize4" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="nchoicebox4" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="npane5" layoutX="10.0" layoutY="7140.0" prefHeight="230.0" prefWidth="754.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fx:id="nimg5" fitHeight="215.0" fitWidth="215.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/n.shorts1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nname5" layoutX="230.0" layoutY="141.0" prefHeight="34.0" prefWidth="196.0" text="Gray Sweatshorts" textFill="#d37171">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nprice5" layoutX="230.0" layoutY="164.0" prefHeight="34.0" prefWidth="148.0" text="1,200.00 PHP">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nsize5" layoutX="292.0" layoutY="188.0" prefHeight="34.0" prefWidth="25.0" text="M">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="nchoicebox5" layoutX="230.0" layoutY="193.0" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Button fx:id="wednesdaysbutton" layoutX="257.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoHome" style="-fx-background-color: transparent;" text="WEDNESDAYS." textFill="#d37171">
+               <font>
+                  <Font name="Times New Roman Bold" size="66.0" />
+               </font>
+            </Button>
+            <Button fx:id="cprofileButton" layoutX="979.0" layoutY="101.0" mnemonicParsing="false" onAction="#gotoProfile" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="profilebutton" fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <MenuBar fx:id="homemenubar" layoutX="14.0" layoutY="140.0" prefHeight="55.0" prefWidth="351.0" style="-fx-background-color: transparent;" stylesheets="@../style.css">
+               <menus>
+                  <Menu fx:id="menuowners1" mnemonicParsing="false" text="Owner's picks">
+                     <items>
+                        <MenuItem fx:id="Jeanne1" mnemonicParsing="false" onAction="#gotoJeannes" styleClass="menuitem" text="Jeanne" />
+                        <MenuItem fx:id="Bianca1" mnemonicParsing="false" onAction="#gotoBias" styleClass="menuitem" text="Bianca" />
+                        <MenuItem fx:id="Liyah1" mnemonicParsing="false" onAction="#gotoLiyahs" styleClass="menuitem" text="Liyah" />
+                        <MenuItem fx:id="Nivek1" mnemonicParsing="false" onAction="#gotoNiveks" styleClass="menuitem" text="Nivek" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="categories" mnemonicParsing="false" text="Categories">
+                     <items>
+                        <MenuItem fx:id="menmenuitem" mnemonicParsing="false" onAction="#gotoMens" styleClass="menuitem" text="Men" />
+                        <MenuItem fx:id="womenmenuitem" mnemonicParsing="false" onAction="#gotoWomens" styleClass="menuitem" text="Women" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
