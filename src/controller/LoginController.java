@@ -77,7 +77,7 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // TODO Auto-generated method stub
-
+        // Hello Liyah!
     }
 
     public void login(ActionEvent event) throws IOException {
